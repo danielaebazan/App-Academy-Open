@@ -1,0 +1,29 @@
+.form {
+       margin-top: 100px;
+       margin-left: 500px;
+       margin-right: 500px;
+}
+
+.labels {
+    display:block;
+    text-align:center;
+    align:center;
+    justify-content: center;
+    margin: auto;
+}
+
+.row1 {
+    display:inline-block;
+}
+
+.row2 {
+    display:inline;
+}
+
+.form {
+    margin:100px 500px; padding:0px;
+    text-align:center;
+    align:center;
+
+}
+

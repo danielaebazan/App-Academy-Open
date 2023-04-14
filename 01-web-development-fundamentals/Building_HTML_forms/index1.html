@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="layout.css">
+    </head>
+    <body>
+       
+<form action="/form-handling-url" method="post" class="form">
+    <fieldset>
+        <legend>Add user</legend>
+
+        <div>
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="first_name" class="labels">
+        </div>
+
+        <div >
+            <label for="lastName">Last name</label >
+            <input type="text" id="lastName" name="last_name" class="labels">
+         </div>
+
+         <div >
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email_adress" class="labels">
+         </div>
+
+         <div class="row1" >
+            <label for="status" >Status</label>
+            <select id="status" name="status" class="labels">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="guest">Guest</option>
+            </select>
+         </div>
+
+         <div class="row1">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" class="labels"> 
+          </div>
+
+         <div class="row2">
+            <p>Choose your favorite programming language</p>
+            <input type="radio" id="html" name="html">
+            <label for="html">HTML</label>
+         </div>
+
+         <div class="row2">
+            <input type="radio" id="css" name="css">
+            <label for="css">CSS</label>
+         </div>
+
+         <div class="row2">
+            <input type="radio" id="javascript" name="javascript">
+            <label for="javascript">JavaScript</label>
+         </div>
+
+         <div>
+           <label for="comments">Comments</label>
+           <textarea id="comments" name="comments" class="labels"></textarea> 
+         </div>
+
+         <div class="row2">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Sing up for news</label>
+        </div>
+
+        <div class="row2">
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">Agree to terms </label>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+    </fieldset>
+</form>
+
+    </body>
