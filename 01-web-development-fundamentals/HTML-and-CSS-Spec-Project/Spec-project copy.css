@@ -1,0 +1,58 @@
+.header1 {
+   display: inline;
+   border: black 2px solid;
+}
+
+.header2{
+    display: inline;
+    float: right;
+    border: black 2px solid;
+}
+
+.menu{
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    float:center;
+    margin-top: 15px;
+}
+
+.main-title{
+
+    border: black 2px solid;
+    margin-top: 15px;
+    width:fit-content;
+    }
+
+.envelope{
+height: 800px;
+width: 800px;
+margin-left: 250px;
+}
+
+.resumen{
+   width: fit-content;
+   border: black 2px solid;
+}
+
+.column1{
+    display: inline-block;
+}
+
+.column2{
+    display: inline-block;
+}
+
+.logo{
+    height: 100px;
+    width: 160px;
+}
+
+.footer1{
+    display:inline;
+    margin-bottom: 0px;
+}
+
+.footer2{
+    display: inline;
+    float: right;
+}
