@@ -3,7 +3,7 @@
 ## Progress Checklist
 - [x] 01-web-development-fundamentals
 - [x] 02-javascript-fundamentals
-- [ ] 03-practice-week
+- [x] 03-practice-week
 - [x] 04-intermediate-javascript
 - [ ] 05-tdd-and-oop
 - [ ] 06-data-structures-and-algorithms
