@@ -5,7 +5,7 @@
 - [x] 02-javascript-fundamentals
 - [x] 03-practice-week
 - [x] 04-intermediate-javascript
-- [ ] 05-tdd-and-oop
+- [x] 05-tdd-and-oop
 - [ ] 06-data-structures-and-algorithms
 - [ ] 07-html-and-css
 - [ ] 08-practice-week
