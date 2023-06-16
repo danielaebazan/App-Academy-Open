@@ -6,7 +6,7 @@
 - [x] 03-practice-week
 - [x] 04-intermediate-javascript
 - [x] 05-tdd-and-oop
-- [ ] 06-data-structures-and-algorithms
+- [x] 06-data-structures-and-algorithms
 - [ ] 07-html-and-css
 - [ ] 08-practice-week
 - [ ] 09-servers-apis-and-promises
