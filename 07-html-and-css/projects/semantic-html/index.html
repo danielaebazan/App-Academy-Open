@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My HTML Cheat Sheet</title>
+        <link rel="icon"
+            href="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/sample-icon.png" />
+    </head>
+    <body>
+        <h1>My HTML Cheat Sheet</h1>
+
+        <h2>Headings</h2>
+        <p>
+            Headings from 'h1' to 'h6' identify blocks and sections. Every page must have one 'h1'.
+        </p>
+
+        <h2>Paragraphs</h2>
+        <p>
+            Paragraphs of text go in 'p' tags.
+        </p>
+
+        <h2>Lists</h2>
+        <h3>Unordered Lists</h3>
+        <p>
+            Unordered lists are marked with bullet points and go in 'ul' tags. Each list item goes in a 'li' tag.
+        </p>
+        <h4>Types of lists:</h4>
+        
+        <ul>
+            <li>Unordered Lists ('ul')</li>
+            <li>Ordered Lists ('ol')</li>
+        </ul>
+
+        <h3>Ordered Lists</h3>
+        <p>
+            Ordered lists are numbered and go in 'ol' tags. Each list item goes in a 'li' tag.
+        </p>
+        <h4>Polya's Problem Solving Framework</h4>
+        <ol>
+            <li>Understand the problem</li>
+            <li>Come up with a plan</li>
+            <li>Carry out the plan</li>
+            <li>Go back and improve your solution</li>
+        </ol>
+
+        <h2>Anchors (i.e. links)</h2>
+        <p>
+            Anchor tags create links to other pages. The URL goes in the 'href' attribute.
+            <a href="https://duckduckgo.com">
+                Go to DuckDuckGo to search for more information.
+            </a>
+        </p>
+        <p>
+            Setting 'target="_blank"' will open the link in a new window. See
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">
+                MDN
+            </a>
+            for more details.
+        </p>
+
+        <h2>Images</h2>
+        <p>
+            You can use the img tag to add images to your page.
+            <img src="http://images.freeimages.com/images/premium/large-thumbs/2582/25827620-itty-bitty-kitty.jpg" alt="A cute kitty">
+        </p>
+
+        <h2> Tables</h2>
+        <p>
+            Tables are great for displayin tabular data.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Insect</th>
+                    <th scope="col">Family</th>
+                    <th scope="col">Fact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Ladybug</th>
+                    <td>Coccinellidae</td>
+                    <td>Can eat more than 5,000 insects!</td>
+                </tr>
+                <tr>
+                    <th scope="row">Fruit files</th>
+                    <td>Drosophilidae</td>
+                    <td>First living creatures in outer space!</td>
+                </tr>
+                <tr> 
+                    <th scope="row">Caterpillars</th>
+                    <td>Heterobathmiidae</td>
+                    <td>Have 12 eyes!</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td>I had no ideas!</td>
+                    <td>Those are neat!</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>
+        To create a table, you start with the "table" element.
+        By structuring your table with "table", "thead", "tbody", and "tfoot", you create a clear separation of the table's different sections.
+        Inside the "tbody" "thead" and "tfoot" , you use "tr" elements to represent each data row, the 'scope' attribute can be used to indicate whether a "th" cell represents a column or row header,
+        and within each row, you use "td" elements to hold the data cells.
+        </p>
+       
+        <h2>Other contest section tags</h2>
+
+        <ol>
+            <li>Article element:</li>
+            <p>
+                The 'article' element represents a self-contained composition in a document, page, application, or site, which is intended to be independently
+                distributable or reusable
+             </p>
+            <li>Footer element:</li>
+            <p> 
+                The 'footer' HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element, typically contains information about the author of the section, copyright data or links to related documents.
+            </p>
+            <li>Header element:</li>
+            <p>
+                The 'header' element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading
+                elements but also a logo, a search form, an author name, and other elements.
+            </p>
+            <li>Nav element:</li>
+            <p>
+                The 'nav' element element represents a section of a page whose purpose is to provide navigation links, either within the current document
+                or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.
+            </p>
+        </ol>
+
+        <h2>Forms</h2>
+
+        <p>
+        Web forms are one of the main points of interaction between a user and a website or application. Forms allow users to
+        enter data, which is generally sent to a web server for processing and storage, or used on the client-side to immediately update the interface in some way.
+        </p>
+
+       <ul>
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form" target="_blank">
+            Your first form
+        </a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form" target="_blank">
+            How to structure a web form
+        </a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types" target="_blank">
+            The HTML5 input types
+        </a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Other_form_controls" target="_blank">
+            Other form controls
+        </a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation" target="_blank">
+            Client-side form validation
+        </a></li> 
+       </ul>
+
+        <section>
+            <h3>Example: Payment information</h3>
+            <p>
+                <label for="card">
+                    <span>Card type:</span>
+                </label>
+                <select id="card" name="usercard">
+                    <option value="visa">Visa</option>
+                    <option value="mc">Mastercard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </p>
+            <p>
+                <label for="number">
+                    <span>Card number:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="tel" id="number" name="cardnumber" />
+            </p>
+            <p>
+                <label for="expiration">
+                    <span>Expiration date:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="text" id="expiration" required="true" placeholder="MM/YY"
+                    pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" />
+            </p>
+        </section>
+        <section>
+            <p>
+                <button type="submit">Validate the payment</button>
+            </p>
+        </section>
+        </form>
+
+    </body>
+</html>
