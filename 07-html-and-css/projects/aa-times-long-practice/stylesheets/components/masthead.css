@@ -1,0 +1,86 @@
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 100% 100%;
+    grid-template-areas:
+    "menu technologies action"
+    "date logo paper";
+}
+
+.masthead__menu-and-search {
+    grid-area: menu;
+    align-self: start;
+    font-size: 11px;
+    padding: 7px 9px;
+    display: inline-flex;
+    padding-left: 20px;
+}
+
+.masthead__menu-and-search:hover {
+    background-color: #e2e2e2;
+}
+
+.masthead__actions {
+    grid-area: action;
+    align-self: start;
+    justify-self: flex-end;
+    padding-right: 20px;
+}
+
+.masthead__technologies {
+    grid-area: technologies;
+    align-self: end;
+    border-bottom: 1px solid #dcdcdc;
+      
+}
+
+.masthead__date {
+    grid-area: date;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 11px;
+    border-top: 1px solid #dcdcdc;
+}
+
+.masthead__logo {
+    padding-top: 20px;
+    grid-area: logo; 
+    text-align: center; 
+    padding-top: 0px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.masthead__paper {
+    grid-area: paper;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 20px;
+    border-top: 1px solid #dcdcdc; 
+    border-bottom: 1px solid #dcdcdc; 
+    padding-bottom: 11px;
+}
+
+.masthead__tech {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #6f6f6f;
+    text-align: center;
+    border-top: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    position: relative;
+    top: 1px;
+    background-color: white;
+
+}
+
+.masthead__tech span {
+    margin: 10px;
+}
+
+
+

@@ -1,0 +1,147 @@
+.main-content{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "grid1 grid2"
+    "grid3 grid4"
+    ;
+    max-width: 1400px;
+    column-gap: 5%;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+     "title title"
+     "article video"
+    ;
+    max-width: 850px;
+    column-gap: 5%;
+}
+
+.title {
+    grid-area: title;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    padding-top: 30px;
+}
+
+.title2 {
+    grid-area: title;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    padding-top: 30px;
+}
+
+.grid1-left {
+    grid-area: article;
+    
+
+}
+
+.grid1-right {
+    grid-area: video;
+    
+}
+
+.sub-title {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    margin-top: 15px;
+    padding-top: 5px;
+}
+
+.author {
+    font-size: 10px;
+    font-family: serif cursive;
+    margin-top: 10px;
+    color:#6f6f6f
+}
+
+.text {
+    font-size: 12px;
+    margin-top: 5%;
+}
+
+.comments {
+    font-size: 9px;
+    font-family: serif cursive;
+    margin-top: 15px;
+    color: #6288a5;
+}
+
+.video {
+    margin-top: 5%;
+
+}
+
+.grid2 {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr ;
+    grid-template-areas:
+        "opinions"
+        "operations"
+    ;
+    max-width: 550px;
+    column-gap: 5%;
+    padding-left: 5%;
+    border-left: 0.3px solid lightgray;
+    border-bottom: 0.3px solid lightgray;
+    padding-bottom: 3%;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    grid-area: "article1 article2";
+    max-width: 850px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.person {
+    color:#6f6f6f;
+    font-size: 10px;
+}
+
+.text-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto) minmax(0, 1fr);
+    column-gap: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    border-left: 0.3px solid lightgray;
+}
+
+@media (max-width: 1200px) {
+    .main-content {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "grid1"
+            "grid3";
+    }
+
+    .main-content .grid2,
+    .main-content .grid4 {
+        display: none;
+    }
+}

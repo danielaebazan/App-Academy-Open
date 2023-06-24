@@ -1,0 +1,12 @@
+.sections {
+    display: flex;
+    justify-content:center;
+    font-size: 12px;
+    margin-top: 110px;
+    margin-left: 20px;
+
+}
+
+.nav_sections {
+    margin-right: 10px;
+}
