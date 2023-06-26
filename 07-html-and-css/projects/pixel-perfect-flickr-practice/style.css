@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/background-1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 65px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo img {
+    height: 20px;
+    margin-right: 3px;
+}
+
+.search-bar {
+    flex: 0 1 900px;
+}
+
+.search-container {
+    position: relative;
+}
+
+#search-input {
+    padding: 8px 30px 8px 35px;
+    width: 93%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.search-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.access {
+    display: flex;
+    align-items: center;
+}
+
+.access a {
+    margin-right: 25px;
+}
+
+.login-link {
+    color: white;
+    text-decoration: none;
+}
+
+.access .signup-button {
+  padding: 8px 20px; 
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.main-content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color:white;
+text-align: center;
+padding: 30px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+     font-size: 30px;
+}
+
+.start-button {
+    padding: 18px 20px;
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-around;
+    padding: 17px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 98%;
+    font-size: 14px;
+}
+
+.link {
+    color: gray;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 13px;
+    }
+
+.link:hover {
+    color:white;
+}
+
+.media-icon {
+    color: gray;
+    font-size: 20px;
+}
+
+.author {
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 555px;
+    color: white;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.author-name:hover {
+    text-decoration: underline;
+}
+
+.title {
+    padding: 12px;
+}
