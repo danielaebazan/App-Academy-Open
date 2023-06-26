@@ -7,8 +7,8 @@
 - [x] 04-intermediate-javascript
 - [x] 05-tdd-and-oop
 - [x] 06-data-structures-and-algorithms
-- [ ] 07-html-and-css
-- [ ] 08-practice-week
+- [x] 07-html-and-css
+- [x] 08-practice-week
 - [ ] 09-servers-apis-and-promises
 - [ ] 10-frontend-javascript
 - [ ] 11-practice-week
