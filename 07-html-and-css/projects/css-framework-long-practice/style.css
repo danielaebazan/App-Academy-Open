@@ -1,0 +1,165 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 0.3px solid #999;
+}
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #555;
+}
+
+.heading {
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn {
+    background-color: #555;
+}
+
+.btn-primary {
+    background-color: #555;
+}
+
+.btn-link {
+    background-color: transparent;
+    color: #555;
+    text-decoration: none;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 6px;
+    background-color: #999;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.card {
+    width: 18rem;
+    margin-top: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 95%;
+    display: flex;
+    justify-self: center;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.alert {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.alert-primary {
+    background-color: #555;
+    color: #fff;
+    width: 50%;
+}
+
+.form-control {
+    display: block;
+    width: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-select {
+    display: block;
+    width: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-check-label {
+    font-weight: normal;
+}
+
+.btn-submit {
+    background-color: #555;
+    color: #fff;
+}
+
