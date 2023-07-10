@@ -9,7 +9,7 @@
 - [x] 06-data-structures-and-algorithms
 - [x] 07-html-and-css
 - [x] 08-practice-week
-- [ ] 09-servers-apis-and-promises
+- [x] 09-servers-apis-and-promises
 - [ ] 10-frontend-javascript
 - [ ] 11-practice-week
 - [ ] 12-express-and-sql
