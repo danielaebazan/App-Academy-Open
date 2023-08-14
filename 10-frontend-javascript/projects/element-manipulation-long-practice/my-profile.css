@@ -1,0 +1,49 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 15px;
+    background-color: antiquewhite; 
+    
+}
+
+.name {
+    color: lightslategray;
+    text-align: center;
+}
+
+
+.my-details {
+    list-style-type: none;
+    padding: 10px;
+    border: 2px solid lightgray;
+
+}
+
+.detail {
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+.detail:hover {
+    background-color: lightgray;
+}
+
+.clock {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+div.clock {
+    font-size: 20px;
+    text-align: center;
+}
+
+img {
+ width: 200px;
+ height: auto;
+ margin: 50px auto;
+transform: rotate(90deg);
+display: flex;
+}
+
