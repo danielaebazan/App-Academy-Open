@@ -1,0 +1,55 @@
+.container {
+    background: beige;
+    display: inline-block;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 49px);
+    grid-template-rows: repeat(9, 49px);
+    grid-gap: 1px;
+
+}
+
+.cell {
+    /* center the cell content */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.cell.pointer:hover {
+    cursor: pointer;
+}
+
+.cell.locked:hover {
+    cursor: unset;
+}
+
+.cell.hit {
+    background: green;
+    font-size: 19px;
+
+}
+
+.cell.miss {
+    background-color: red;
+}
+
+h1 {
+    padding-left: 140px;
+}
+
+.win {
+    padding: 0 178px 10px;
+}
+
+#reset {
+    margin: 0 170px 10px;
+}
