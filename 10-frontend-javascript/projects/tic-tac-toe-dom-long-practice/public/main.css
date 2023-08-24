@@ -1,0 +1,97 @@
+/* Your code here */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.background {
+    background-color: whitesmoke;
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.title {
+    color:black;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.hide {
+    display: none;
+
+}
+
+.container {
+   display: grid;
+   margin: 20px auto;
+   max-width: 300px;
+   justify-content: center;
+   align-content: center;
+   grid-template-columns: repeat(3, auto);
+}
+
+.tile {
+    min-width: 100px;
+    min-height: 100px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    font-size: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile:first-child,
+.tile:nth-child(2),
+.tile:nth-child(3) {
+    border-top: none;
+}
+
+.tile:nth-child(3n + 1) {
+    border-left: none;
+}
+
+.tile:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.tile:last-child,
+.tile:nth-child(8),
+.tile:nth-child(7) {
+    border-bottom: none;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#newgame {
+    background-color: gainsboro;
+    margin-top: 20px;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+#giveup {
+    background-color: gainsboro;
+    margin-top: 20px;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 9em;
+    cursor: pointer;
+}
