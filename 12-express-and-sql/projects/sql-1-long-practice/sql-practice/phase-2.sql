@@ -1,0 +1,15 @@
+-- Your code here
+CREATE TABLE customers (
+    id INTEGER PRIMARY KEY,
+    name VARCHAR(40) NOT NULL,
+    phone VARCHAR(15) UNIQUE CHECK (LENGTH(REPLACE(phone, '-', '')) = 10),
+    email VARCHAR(255) UNIQUE,
+    points INTEGER NOT NULL DEFAULT 5,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+CREATE TABLE coffee_orders (
+    id INTEGER PRIMARY KEY,
+    is_redeemed INTEGER DEFAULT 0, 
+    ordered_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
