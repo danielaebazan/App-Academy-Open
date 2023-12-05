@@ -1,0 +1,13 @@
+.white-on-green {
+  background-color: green;
+  color: white;
+}
+.green-on-white {
+  background-color: #ffffff;
+  color: #008000;
+}
+.poke-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
