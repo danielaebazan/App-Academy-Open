@@ -17,8 +17,6 @@
 - [x] 14-web-security-and-authentication
 - [x] 15-react
 - [ ] 16-redux-and-authentication
-- [ ] 17-practice-week
-- [ ] 18-python
-- [ ] 19-practice-week
-- [ ] 20-flask-sqlalchemy-and-forms
-- [ ] 21-docker-and-microservices
+- [ ] 17-python
+- [ ] 18-flask-sqlalchemy-and-forms
+- [ ] 19-docker-and-microservices
