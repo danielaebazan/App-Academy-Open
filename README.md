@@ -10,18 +10,15 @@
 - [x] 07-html-and-css
 - [x] 08-practice-week
 - [x] 09-servers-apis-and-promises
-- [ ] 10-frontend-javascript
-- [ ] 11-practice-week
-- [ ] 12-express-and-sql
-- [ ] 13-express-and-sequelize
-- [ ] 14-web-security-and-authentication
-- [ ] 15-react
+- [x] 10-frontend-javascript
+- [x] 11-practice-week
+- [x] 12-express-and-sql
+- [x] 13-express-and-sequelize
+- [x] 14-web-security-and-authentication
+- [x] 15-react
 - [ ] 16-redux-and-authentication
 - [ ] 17-practice-week
 - [ ] 18-python
 - [ ] 19-practice-week
 - [ ] 20-flask-sqlalchemy-and-forms
 - [ ] 21-docker-and-microservices
-- [ ] 22-portfolio-building
-- [ ] 23-portfolio-building
-- [ ] 24-portfolio-building
