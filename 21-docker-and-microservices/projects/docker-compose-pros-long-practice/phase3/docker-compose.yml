@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  drupal: 
+    build: .
+    image: dmytro/custom-drupal
+    ports: 
+      - "8080:80"   
+  
+  post: 
+    build: .   
+    image: postgres:9.6
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes: 
+      - drupal-data:/var/lib/postgresql/data
+
+volumes: 
+  drupal-data:
