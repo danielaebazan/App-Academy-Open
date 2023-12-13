@@ -51,7 +51,7 @@ const server = http.createServer((req, res) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/plain');
         return res.end(`Dog details for dogId: ${dogId}`);
-      }
+      } 
     }
     if (req.methods === 'GET' && req.url === '/dogs/new') {
       res.statusCode = 200;
