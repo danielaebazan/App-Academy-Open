@@ -1,0 +1,14 @@
+extends book-details-ratings.pug
+
+include utils.pug
+
+block content
+  +validationErrorSummary(errors)
+  +alert(`rating is ${rating}, email is ${email}`, '/')
+
+  form(action=`/book/${bookId}/rate/add` method='post')
+    include book-rate-form-fields.pug
+    div(class='py-4')
+      button(type='submit' class='btn btn-primary') Add Rating
+      a(href=`/book/${bookId}` class='btn btn-warning ml-2') Cancel
+

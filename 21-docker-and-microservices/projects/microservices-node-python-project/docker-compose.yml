@@ -1,0 +1,47 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+    image: nodeapp
+    ports: 
+      - "80:8080"
+    environment:
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_DATABASE: ${DB_DATABASE}
+      DB_HOST: ${DB_HOST}
+      NODE_ENV: ${NODE_ENV}
+    networks:
+      pgnodeapp:
+    volumes: 
+      - .:/app
+    depends_on:
+      db:
+        condition: service_healthy
+    command: npm run build-start
+
+  db:
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+    networks:
+      pgnodeapp:
+        aliases:
+          - "postgres"
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+    healthcheck:
+      test: pg_isready  -d ${DB_DATABASE} -U ${DB_USERNAME} 
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+
+networks:
+  pgnodeapp:
+    driver: bridge
+volumes: 
+  postgres-db:

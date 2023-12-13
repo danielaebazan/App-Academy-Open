@@ -1,0 +1,50 @@
+version: '3.8'
+services:
+  api:
+    build:
+      context: .
+    image: flaskapp
+    ports: 
+      - "5000:5000"
+    environment:
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_DATABASE: ${DB_DATABASE}
+      DB_HOST: ${DB_HOST}      
+      DATABASE_URL: ${DATABASE_URL}
+      PIP_ROOT_USER_ACTION: ignore    
+    networks:
+      read-list:
+    volumes: 
+      - .:/app
+    depends_on:
+      db:
+        condition: service_healthy
+    command: ["bash", "entrypoint.sh"]
+
+  db:
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+    ports: 
+      - "5432:5432"
+    networks:
+      read-list:
+        aliases:
+          - "postgres"
+    volumes:
+      - postgres-db2:/var/lib/postgresql/data
+    healthcheck:
+      test: pg_isready  -d ${DB_DATABASE} -U ${DB_USERNAME} 
+      interval: 2s
+      timeout: 5s
+      retries: 5
+      start_period: 2s
+
+networks:
+  read-list:
+    driver: bridge
+volumes: 
+  postgres-db2:
