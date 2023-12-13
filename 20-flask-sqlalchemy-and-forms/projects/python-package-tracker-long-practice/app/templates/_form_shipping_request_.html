@@ -1,0 +1,23 @@
+<form method="post" action="">
+  {{ form.csrf_token }}
+  {% with field = 'sender' %}
+    {% include '_form_el_.html' %}
+  {% endwith %}
+  {% with field = 'recipient' %}
+    {% include '_form_el_.html' %}
+  {% endwith %}
+  {% with field = 'origin' %}
+    {% include '_form_el_.html' %}
+  {% endwith %}
+  {% with field = 'destination' %}
+    {% include '_form_el_.html' %}
+  {% endwith %}
+  {% with field = 'express' %}
+    {% include '_form_el_.html' %}
+  {% endwith %}
+
+ 
+  <div>{{ form.submit }}</div>
+  <div>{{ form.cancel }}</div>
+
+</form>

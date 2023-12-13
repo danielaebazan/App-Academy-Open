@@ -1,0 +1,10 @@
+<div>    
+  {{ form[field].label }} {{ form[field] }}
+  {% if form[field].errors %}
+    <ul>
+      {% for error in form[field].errors %}
+        <li>{{ error }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
